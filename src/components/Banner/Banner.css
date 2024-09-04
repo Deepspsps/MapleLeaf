@@ -1,0 +1,148 @@
+/* Base styles for .banner, .bannerContainer, .bannerText */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(42, 48, 80, 0.37), rgba(42, 48, 80, 0.61)), var(--banner-image);
+    background-size:cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; 
+    overflow: hidden; 
+}
+
+.bannerContainer {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; 
+}
+
+.bannerText {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+.bannerText h1 {
+align-items: center;
+}
+.bannerText p {
+    width: 100%;
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+ .bannerFramer{
+    justify-content: center;
+    position: relative;
+ }
+
+ .bannerFramer h1{
+    margin-right: 10px;
+ }
+
+/* Media Queries */
+
+/* 1440px and below*/
+@media (max-width: 1440px) {
+    .banner {
+        margin: 0 auto; 
+    }
+    .bannerText h1 {
+        font-size: 36px;
+    }
+    .bannerText p {
+        font-size: 16px;
+    }
+}
+
+/* 1280px and below */
+@media (max-width: 1280px) {
+    .banner {
+        max-width: 1280px;
+        margin: 0 auto; 
+    }
+    .bannerText h1 {
+        font-size: 32px;
+    }
+    .bannerText p {
+        font-size: 15px;
+    }
+}
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+    .banner {
+        max-width: 1024px;
+        margin: 0 auto; 
+    }
+    .bannerText h1 {
+        font-size: 28px;
+    }
+    .bannerText p {
+        font-size: 14px;
+    }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+    .banner {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .bannerText h1 {
+        font-size: 24px;
+    }
+    .bannerText p {
+        font-size: 13px;
+        margin: 8px auto 15px;
+    }
+}
+
+/* 640px and below */
+@media (max-width: 650px) {
+    .bannerText h1 {
+        font-size: 20px;
+        max-width: 400px;
+        margin:auto;
+    }
+    .bannerText p {
+        font-size: 12px;
+        margin: 6px auto 12px;
+    }
+}
+
+/* 425px and below */
+@media (max-width: 425px) {
+    .banner {
+        max-width: 425px;
+    }
+    .bannerText h1 {
+        font-size: 18px;
+    }
+    .bannerText p {
+        font-size: 11px;
+        margin: 5px auto 10px;
+    }
+}
+
+/* 375px and below */
+@media (max-width: 375px) {
+    .banner {
+        max-width: 375px;
+        margin: 0 auto; /* Center the banner */
+    }
+    .bannerText h1 {
+        font-size: 16px;
+    }
+    .bannerText p {
+        font-size: 10px;
+        margin: 4px auto 8px;
+    }
+}

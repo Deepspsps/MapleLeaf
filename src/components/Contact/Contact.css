@@ -1,0 +1,141 @@
+.contact{
+    margin:80px auto;
+    max-width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.contactCol{
+    color:#000F38;
+    flex-basis: 48%;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/*
+.contactCol img{
+    width:15px;
+    height: 18px;
+}
+*/
+.contactCol ul li{
+    margin-top: 5px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.contactCol ul li img{
+    width:18px;
+    margin-right: 3px;
+}
+
+.contact form input, .contact form textarea{
+    display: block;
+    width:100%;
+    background: #526d8254;
+    padding: 15px;
+    border:0;
+    outline:0;
+    margin-bottom: 15px;
+    margin-top:5px;
+    resize: none;
+}
+
+.contactCol span{
+    display: block;
+    margin:20px 0;
+}
+
+.contactCol button{
+    background-color: #7199b6;
+    color: #fff;
+ }
+
+/*Media Queries*/ 
+
+/* xl */
+@media (max-width: 1280px) {
+    .contact {
+      max-width: 1024px;
+    }
+  }
+  
+  /* lg */
+@media (max-width: 1024px) {
+    
+    .contactCol ul li{
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: 450;
+        list-style: none;
+    }
+    
+    .contactCol ul li img{
+    width:16px;
+    margin-right: 3px;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .contactCol ul li{
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: 450;
+        list-style: none;
+    }
+    
+    .contactCol ul li img{
+    width:15px;
+    margin-right: 3px;
+    }
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    
+    .contact{
+        display: block;
+    }
+    .contactCol{
+        padding: 20px;
+    }
+    
+    .contactCol ul li{
+        margin-top: 5px;
+        font-size: 17px;
+        font-weight: 450;
+        list-style: none;
+    }
+    
+    .contactCol ul li img{
+    width:16px;
+    margin-right: 3px;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .contact {
+      width: 100%;
+      display: block;
+    }
+    .contactCol{
+        padding: 20px;
+    }
+    
+    .contactCol ul li{
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 450;
+        list-style: none;
+    }
+    
+    .contactCol ul li img{
+    width:15px;
+    margin-right: 3px;
+    }
+  }
